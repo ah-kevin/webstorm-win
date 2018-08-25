@@ -2,7 +2,9 @@
   <component name="MaterialThemeConfig">
     <option name="version" value="2.8.2" />
     <option name="selectedTheme" value="ONE_DARK" />
+    <option name="highlightColor" value="80cbc4" />
     <option name="isMaterialDesign" value="false" />
+    <option name="accentColor" value="80cbc4" />
     <option name="statusBarTheme" value="false" />
     <option name="upperCaseTabs" value="true" />
     <option name="userId" value="-675dc023:164ef0cfde1:-8000" />
