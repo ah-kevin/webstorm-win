@@ -3,4 +3,7 @@
     <option name="USE_SEMICOLON_AFTER_STATEMENT" value="false" />
     <option name="FORCE_SEMICOLON_STYLE" value="true" />
   </JSCodeStyleSettings>
+  <TypeScriptCodeStyleSettings>
+    <option name="SPACES_WITHIN_IMPORTS" value="true" />
+  </TypeScriptCodeStyleSettings>
 </code_scheme>
