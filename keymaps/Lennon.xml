@@ -30,5 +30,9 @@
     <keyboard-shortcut first-keystroke="meta alt l" />
     <keyboard-shortcut first-keystroke="shift ctrl f" />
   </action>
+  <action id="RenameElement">
+    <keyboard-shortcut first-keystroke="shift f6" />
+    <keyboard-shortcut first-keystroke="f13" />
+  </action>
   <action id="Vcs.UpdateProject" />
 </keymap>
