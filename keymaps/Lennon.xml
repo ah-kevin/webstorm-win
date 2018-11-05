@@ -10,10 +10,6 @@
     <keyboard-shortcut first-keystroke="alt up" />
     <keyboard-shortcut first-keystroke="ctrl w" />
   </action>
-  <action id="FileStructurePopup">
-    <keyboard-shortcut first-keystroke="meta f12" />
-    <keyboard-shortcut first-keystroke="meta p" />
-  </action>
   <action id="NewDir">
     <keyboard-shortcut first-keystroke="f15" />
   </action>
@@ -29,10 +25,6 @@
   <action id="ReformatCode">
     <keyboard-shortcut first-keystroke="meta alt l" />
     <keyboard-shortcut first-keystroke="shift ctrl f" />
-  </action>
-  <action id="RenameElement">
-    <keyboard-shortcut first-keystroke="shift f6" />
-    <keyboard-shortcut first-keystroke="f13" />
   </action>
   <action id="Vcs.UpdateProject" />
 </keymap>
