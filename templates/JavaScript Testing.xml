@@ -1,0 +1,7 @@
+<templateSet group="JavaScript Testing">
+  <template name="asdfsdf" value="asdfsd " description="sdf sd" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
