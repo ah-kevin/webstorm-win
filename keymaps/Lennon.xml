@@ -10,6 +10,9 @@
     <keyboard-shortcut first-keystroke="alt up" />
     <keyboard-shortcut first-keystroke="ctrl w" />
   </action>
+  <action id="MinimizeCurrentWindow">
+    <keyboard-shortcut first-keystroke="alt m" />
+  </action>
   <action id="NewDir">
     <keyboard-shortcut first-keystroke="f15" />
   </action>
@@ -32,4 +35,8 @@
     <keyboard-shortcut first-keystroke="f14" />
   </action>
   <action id="Vcs.UpdateProject" />
+  <action id="osmedile.intellij.stringmanip.PopupChoiceAction">
+    <keyboard-shortcut first-keystroke="shift alt m" />
+    <keyboard-shortcut first-keystroke="meta m" />
+  </action>
 </keymap>
