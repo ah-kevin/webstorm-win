@@ -20,6 +20,7 @@
   <action id="NewDir">
     <keyboard-shortcut first-keystroke="f15" />
   </action>
+  <action id="NewScratchFile" />
   <action id="NewTypeScriptFile">
     <keyboard-shortcut first-keystroke="meta t" />
   </action>
@@ -33,12 +34,19 @@
     <keyboard-shortcut first-keystroke="meta alt l" />
     <keyboard-shortcut first-keystroke="shift ctrl f" />
   </action>
+  <action id="RenameElement">
+    <keyboard-shortcut first-keystroke="shift f6" />
+    <keyboard-shortcut first-keystroke="f13" />
+  </action>
   <action id="ShelvedChanges.Rename">
     <keyboard-shortcut first-keystroke="f2" />
     <keyboard-shortcut first-keystroke="shift f6" />
     <keyboard-shortcut first-keystroke="f14" />
   </action>
   <action id="Vcs.UpdateProject" />
+  <action id="angularCliGenerate">
+    <keyboard-shortcut first-keystroke="shift meta n" />
+  </action>
   <action id="osmedile.intellij.stringmanip.PopupChoiceAction">
     <keyboard-shortcut first-keystroke="shift alt m" />
     <keyboard-shortcut first-keystroke="meta m" />
