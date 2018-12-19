@@ -1,0 +1,71 @@
+<templateSet group="ngrx">
+  <template name="ngrx-action-single2" value="export const $ACTION_TYPE$ = '[$STATE$] $ACTION$';&#10;export class $ACTION_NAME$ implements Action {&#10;    readonly type = $ACTION_TYPE$;&#10;    constructor(public payload?:$END$) { }&#10;}" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION_TYPE" expression="capitalizeAndUnderscore(ACTION_NAME)" defaultValue="" alwaysStopAt="false" />
+    <variable name="STATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="spaceSeparated(ACTION_NAME)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ngrx-actions" value="import { Action } from '@ngrx/store';&#10;export const $ACTION_TYPE$ = '[$STATE$] $ACTION$';&#10;export const $ACTION_TYPE$_SUCCESS = '[$STATE$] $ACTION$ Success';&#10;export const $ACTION_TYPE$_FAIL = '[$STATE$] $ACTION$ FAIL';&#10;&#10;export class $ACTION_NAME$ implements Action {&#10;    readonly type = $ACTION_TYPE$;&#10;    constructor(public payload?:$load$) { }&#10;}&#10;export class $ACTION_NAME$Success implements Action {&#10;    readonly type = $ACTION_TYPE$_SUCCESS;&#10;    constructor(public payload?:$SUC$) { }&#10;}&#10;export class $ACTION_NAME$Fail implements Action {&#10;    readonly type = $ACTION_TYPE$_FAIL;&#10;    constructor(public payload?:$END$) { }&#10;}&#10;export type Actions &#10;= $ACTION_NAME$&#10;| $ACTION_NAME$Success&#10;| $ACTION_NAME$Fail;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION_TYPE" expression="capitalizeAndUnderscore(ACTION_NAME)" defaultValue="" alwaysStopAt="false" />
+    <variable name="STATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="spaceSeparated(ACTION_NAME)" defaultValue="" alwaysStopAt="false" />
+    <variable name="load" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ngrx-action-api-action" value="export const $ACTION_TYPE$ = '[$STATE$] $ACTION$';&#10;export const $ACTION_TYPE$_SUCCESS = '[$STATE$] $ACTION$ Success';&#10;export const $ACTION_TYPE$_FAIL = '[$STATE$] $ACTION$ FAIL';&#10;&#10;export class $ACTION_NAME$ implements Action {&#10;    readonly type = $ACTION_TYPE$;&#10;    constructor(public payload?:$load$) { }&#10;}&#10;export class $ACTION_NAME$Success implements Action {&#10;    readonly type = $ACTION_TYPE$_SUCCESS;&#10;    constructor(public payload?:$SUC$) { }&#10;}&#10;export class $ACTION_NAME$Fail implements Action {&#10;    readonly type = $ACTION_TYPE$_FAIL;&#10;    constructor(public payload?:$END$) { }&#10;}&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION_TYPE" expression="capitalizeAndUnderscore(ACTION_NAME)" defaultValue="" alwaysStopAt="false" />
+    <variable name="STATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="spaceSeparated(ACTION_NAME)" defaultValue="" alwaysStopAt="false" />
+    <variable name="load" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ngrx-effects" value="import { Injectable } from '@angular/core';&#10;import { Observable } from 'rxjs/Observable';&#10;import { Action } from '@ngrx/store';&#10;import { Actions, Effect, toPayload } from '@ngrx/effects';&#10;import { Store } from '@ngrx/store';&#10;&#10;@Injectable()&#10;export class $MODEL$Effects {&#10;    @Effect() $EFFECT_OBSERVABLE_NAME$: Observable&lt;Action&gt; = this.actions$.ofType($ACTION_TO_LISTEN_TO$)&#10;    constructor(private actions$: Actions) {}&#10;}&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EFFECT_OBSERVABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION_TO_LISTEN_TO" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ngrx-effects-single" value="    @Effect() $EFFECT_OBSERVABLE_NAME$: Observable&lt;Action&gt; = this.actions$.ofType($ACTION_TO_LISTEN_TO$)&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="EFFECT_OBSERVABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION_TO_LISTEN_TO" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ngrx-reducer" value="import * as $class$ from $form$;&#10;export interface $State$ {&#10;}&#10;&#10;export const initialState: $State$ = {&#10;}&#10;&#10;&#10;export function reducer(state: $State$ = initialState, action: $class$.Actions): $State$ {&#10;    switch (action.type) {&#10;        case $MyAction$:&#10;            // your action code here&#10;            return $case$ ;&#10;        default:&#10;            return state;&#10;    }&#10;}&#10;&#10;export const $getProperty1$ = (state: $State$) =&gt; state.$property1$;&#10;&#10;export const $getProperty2$ = (state: $State$) =&gt; state.$property2$;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="State" expression="camelCase(String)" defaultValue="&quot;State&quot;" alwaysStopAt="true" />
+    <variable name="form" expression="" defaultValue="&quot;'../actions/class'&quot;" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MyAction" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="case" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="getProperty1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="property1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="getProperty2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="property2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ngrx-action-single" value="$ACTION_NAME$ = '[$STATE$] $ACTION$';&#10;export class $ACTION_NAME$ implements Action {&#10;    readonly type = $ACTION_TYPE$ActionTypes.$ACTION_NAME$;&#10;    constructor(public payload?:$END$) { }&#10;}" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION_TYPE" expression="STATE+Aaaaaa" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="spaceSeparated(ACTION_NAME)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
