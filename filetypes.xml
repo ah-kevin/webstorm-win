@@ -1,0 +1,16 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <removed_mapping ext="md" approved="true" type="Markdown" />
+      <mapping pattern=".gitattributes" type="PLAIN_TEXT" />
+      <mapping pattern="USAGE" type="PLAIN_TEXT" />
+      <mapping pattern="eslintignore" type="PLAIN_TEXT" />
+      <mapping pattern="editorconfig" type="PLAIN_TEXT" />
+      <mapping pattern=".flowconfig" type="PLAIN_TEXT" />
+      <mapping pattern=".nojekyll" type="PLAIN_TEXT" />
+      <mapping ext="conf" type="PLAIN_TEXT" />
+      <mapping ext="md" type="PLAIN_TEXT" />
+      <removed_mapping ext="md" approved="true" type="Markdown" />
+    </extensionMap>
+  </component>
+</application>
