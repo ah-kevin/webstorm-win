@@ -1,4 +1,4 @@
-<keymap version="1" name="Windows 副本" parent="$default">
+<keymap version="1" name="Windows-mac" parent="$default">
   <action id="AddToFavoritesPopup" />
   <action id="CodeCompletion">
     <keyboard-shortcut first-keystroke="ctrl space" />
