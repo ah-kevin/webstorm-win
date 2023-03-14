@@ -1,0 +1,54 @@
+<keymap version="1" name="Lennon" parent="Mac OS X 10.5+">
+  <action id="CodeCompletion">
+    <keyboard-shortcut first-keystroke="meta slash" />
+  </action>
+  <action id="CommentByLineComment">
+    <keyboard-shortcut first-keystroke="meta divide" />
+    <keyboard-shortcut first-keystroke="ctrl slash" />
+  </action>
+  <action id="EditorSelectWord">
+    <keyboard-shortcut first-keystroke="alt up" />
+    <keyboard-shortcut first-keystroke="ctrl w" />
+  </action>
+  <action id="FileStructurePopup">
+    <keyboard-shortcut first-keystroke="meta f12" />
+    <keyboard-shortcut first-keystroke="meta p" />
+  </action>
+  <action id="MinimizeCurrentWindow">
+    <keyboard-shortcut first-keystroke="alt m" />
+  </action>
+  <action id="NewDir">
+    <keyboard-shortcut first-keystroke="f15" />
+  </action>
+  <action id="NewScratchFile" />
+  <action id="NewTypeScriptFile">
+    <keyboard-shortcut first-keystroke="meta t" />
+  </action>
+  <action id="QuickJavaDoc">
+    <keyboard-shortcut first-keystroke="f1" />
+    <keyboard-shortcut first-keystroke="ctrl j" />
+    <mouse-shortcut keystroke="control button2" />
+    <keyboard-shortcut first-keystroke="ctrl q" />
+  </action>
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="meta alt l" />
+    <keyboard-shortcut first-keystroke="shift ctrl f" />
+  </action>
+  <action id="RenameElement">
+    <keyboard-shortcut first-keystroke="shift f6" />
+    <keyboard-shortcut first-keystroke="f13" />
+  </action>
+  <action id="ShelvedChanges.Rename">
+    <keyboard-shortcut first-keystroke="f2" />
+    <keyboard-shortcut first-keystroke="shift f6" />
+    <keyboard-shortcut first-keystroke="f14" />
+  </action>
+  <action id="Vcs.UpdateProject" />
+  <action id="angularCliGenerate">
+    <keyboard-shortcut first-keystroke="shift meta n" />
+  </action>
+  <action id="osmedile.intellij.stringmanip.PopupChoiceAction">
+    <keyboard-shortcut first-keystroke="shift alt m" />
+    <keyboard-shortcut first-keystroke="meta m" />
+  </action>
+</keymap>

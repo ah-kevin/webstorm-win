@@ -1,0 +1,42 @@
+<keymap version="1" name="Visual Studio win" parent="Visual Studio">
+  <action id="AddToFavoritesPopup" />
+  <action id="CodeCompletion">
+    <keyboard-shortcut first-keystroke="ctrl space" />
+    <keyboard-shortcut first-keystroke="alt slash" />
+  </action>
+  <action id="ExportToTextFile" />
+  <action id="FileStructurePopup">
+    <keyboard-shortcut first-keystroke="ctrl f12" />
+    <keyboard-shortcut first-keystroke="alt p" />
+  </action>
+  <action id="FindInPath">
+    <keyboard-shortcut first-keystroke="shift alt f" />
+  </action>
+  <action id="GotoAction">
+    <keyboard-shortcut first-keystroke="shift alt a" />
+  </action>
+  <action id="GotoFile">
+    <keyboard-shortcut first-keystroke="alt o" />
+    <keyboard-shortcut first-keystroke="shift alt o" />
+  </action>
+  <action id="Macro.save and format">
+    <keyboard-shortcut first-keystroke="shift ctrl f" />
+  </action>
+  <action id="RecentFiles">
+    <keyboard-shortcut first-keystroke="ctrl e" />
+    <keyboard-shortcut first-keystroke="alt e" />
+  </action>
+  <action id="Refactorings.QuickListPopupAction">
+    <keyboard-shortcut first-keystroke="shift ctrl alt t" />
+    <keyboard-shortcut first-keystroke="ctrl t" />
+  </action>
+  <action id="ShowSettings">
+    <keyboard-shortcut first-keystroke="alt f7" />
+    <keyboard-shortcut first-keystroke="alt comma" />
+  </action>
+  <action id="SwitcherRecentEditedChangedToggleCheckBox">
+    <keyboard-shortcut first-keystroke="ctrl e" />
+    <keyboard-shortcut first-keystroke="alt e" />
+  </action>
+  <action id="Vcs.UpdateProject" />
+</keymap>
