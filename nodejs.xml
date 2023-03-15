@@ -3,9 +3,7 @@
     <local-interpreter path="C:/Program Files (x86)/nodejs/node.exe">
       <version-cache last-modified="0" />
     </local-interpreter>
-    <local-interpreter path="D:/CYZHKT/iflyRt/qzk.wk.exe">
-      <version-cache last-modified="1678643754000" />
-    </local-interpreter>
+    <local-interpreter path="D:/CYZHKT/iflyRt/qzk.wk.exe" />
     <local-interpreter path="d:/nodejs/node.exe">
       <version-cache version="12.22.12" last-modified="1677738715525" />
     </local-interpreter>
