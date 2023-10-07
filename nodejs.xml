@@ -4,10 +4,10 @@
       <version-cache last-modified="0" />
     </local-interpreter>
     <local-interpreter path="D:/CYZHKT/iflyRt/qzk.wk.exe">
-      <version-cache last-modified="1681212940000" />
+      <version-cache last-modified="1694694226000" />
     </local-interpreter>
     <local-interpreter path="d:/nodejs/node.exe">
-      <version-cache version="18.16.0" last-modified="1682569799393" />
+      <version-cache version="16.19.0" last-modified="1696647278696" />
     </local-interpreter>
   </component>
 </application>
